@@ -13,9 +13,9 @@ export default function Home() {
   useEffect(() => {
     (async () => {
       const response = await fetch(
-        `${API_URL}api/videos/?api_key=${STATIC_FOLDER_FROM_SERVER}&page=${page}`
+        `${API_URL}api/videos/?PageSize=1&PageNumber=${page}`
       );
-      console.log("kk");
+
       const videos = await response.json();
       setVideosList(videos);
     })();
@@ -30,15 +30,15 @@ export default function Home() {
       <Col span={24} style={{ textAlign: "center", marginTop: 25 }}>
         <h1 style={{ fontSize: 35, fontWeight: "bold" }}>Uploaded Videos</h1>
       </Col>
-      {videosList.results ? (
+      {videosList.videos ? (
         <>
-          <Row span="24">
-            <VideosCatalog videos={videosList} />
+          <Row span="24" style={{ width: "100%" }}>
+            <VideosCatalog videos={videosList.videos} />
           </Row>
           <Row span="24">
             <Pagination
-              currentPage={videosList.page}
-              totalItems={videosList.total_results}
+              currentPage={videosList.queryParameters.currentPage + 1}
+              totalItems={videosList.queryParameters.totalCount}
               onChangePage={onChangePage}
             />
           </Row>

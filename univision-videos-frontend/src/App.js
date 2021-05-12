@@ -4,7 +4,7 @@ import { Layout } from "antd";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./pages/home";
 // import Error404 from "./pages/error404";
-// import Movie from "./pages/movie";∫
+// import Movie from "./pages/movie";
 import MenuTop from "./components/MenuTop";
 
 export default function App() {
