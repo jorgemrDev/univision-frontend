@@ -1,0 +1,129 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render VideosCatalog correctly 1`] = `
+Array [
+  <div
+    className="ant-col videos-catalog"
+    style={Object {}}
+  >
+    <div
+      className="ant-card ant-card-bordered ant-card-hoverable"
+      onClick={[Function]}
+      style={
+        Object {
+          "width": "240px",
+        }
+      }
+    >
+      <div
+        className="ant-card-cover"
+      >
+        <img
+          alt="title"
+          src="http://localhost:26765/StaticFiles/thumbnailPath"
+        />
+      </div>
+      <div
+        className="ant-card-body"
+        style={Object {}}
+      >
+        <div
+          className="ant-card-meta"
+        >
+          <div
+            className="ant-card-meta-detail"
+          >
+            <div
+              className="ant-card-meta-title"
+            >
+              title
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  <div
+    className="ant-col videos-catalog"
+    style={Object {}}
+  >
+    <div
+      className="ant-card ant-card-bordered ant-card-hoverable"
+      onClick={[Function]}
+      style={
+        Object {
+          "width": "240px",
+        }
+      }
+    >
+      <div
+        className="ant-card-cover"
+      >
+        <img
+          alt="title2"
+          src="http://localhost:26765/StaticFiles/thumbnailPath2"
+        />
+      </div>
+      <div
+        className="ant-card-body"
+        style={Object {}}
+      >
+        <div
+          className="ant-card-meta"
+        >
+          <div
+            className="ant-card-meta-detail"
+          >
+            <div
+              className="ant-card-meta-title"
+            >
+              title2
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  <div
+    className="ant-col videos-catalog"
+    style={Object {}}
+  >
+    <div
+      className="ant-card ant-card-bordered ant-card-hoverable"
+      onClick={[Function]}
+      style={
+        Object {
+          "width": "240px",
+        }
+      }
+    >
+      <div
+        className="ant-card-cover"
+      >
+        <img
+          alt="title3"
+          src="http://localhost:26765/StaticFiles/thumbnailPath3"
+        />
+      </div>
+      <div
+        className="ant-card-body"
+        style={Object {}}
+      >
+        <div
+          className="ant-card-meta"
+        >
+          <div
+            className="ant-card-meta-detail"
+          >
+            <div
+              className="ant-card-meta-title"
+            >
+              title3
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+]
+`;

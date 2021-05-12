@@ -6,7 +6,6 @@ import { EyeFilled } from "@ant-design/icons";
 import ModalVideo from "../../components/ModalVideo";
 
 export default function VideosCatalog({ videos }) {
-  console.log(videos);
   return videos.map((video) => (
     <Col key={video.videoId} className="videos-catalog">
       <VideoCard video={video}></VideoCard>

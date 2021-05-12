@@ -1,19 +1,33 @@
 import React from "react";
-import { shallow } from "enzyme";
 import VideosCatalog from "../VideosCatalog";
-describe("VideosCatalog", () => {
-  const testProps = {
-    props: {
-      a: { id: "a" },
-      b: { id: "b" },
-    },
-  };
+import renderer from "react-test-renderer";
 
-  it("renders correctly", () => {
-    const wrapper = shallow(<VideosCatalog {...testProps} />);
+const videos = [
+  {
+    videoId: "1",
+    title: "title",
+    thumbnailPath: "thumbnailPath",
+    videoPath: "videoPath",
+  },
+  {
+    videoId: "2",
+    title: "title2",
+    thumbnailPath: "thumbnailPath2",
+    videoPath: "videoPath2",
+  },
+  {
+    videoId: "3",
+    title: "title3",
+    thumbnailPath: "thumbnailPath3",
+    videoPath: "videoPath2",
+  },
+];
 
-    expect(wrapper.find("VideosCatalog").length).toBe(2);
-
-    expect(wrapper).toMatchSnapshot();
-  });
+test("Render VideosCatalog correctly", () => {
+  const component = renderer.create(
+    <VideosCatalog videos={videos}></VideosCatalog>
+  );
+  let tree = component.toJSON();
+  expect(tree.length).toBe(3);
+  expect(tree).toMatchSnapshot();
 });
