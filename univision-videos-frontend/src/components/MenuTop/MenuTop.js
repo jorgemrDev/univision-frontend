@@ -9,7 +9,10 @@ export default function MenuTop() {
   return (
     <div className="menu-top">
       <div className="menu-top__logo">
-        <Logo></Logo>
+        <a href="/">
+          {" "}
+          <Logo></Logo>{" "}
+        </a>
       </div>
       <Menu
         theme="dark"

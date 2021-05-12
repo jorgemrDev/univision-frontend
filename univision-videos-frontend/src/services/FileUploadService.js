@@ -7,7 +7,7 @@ const upload = (file, onUploadProgress) => {
 
   formData.append("file", file);
 
-  return axios.post(API_URL + "/uploadfiles", formData, {
+  return axios.post(`${API_URL}api/videos/uploadfiles`, formData, {
     headers: {
       "Content-Type": "multipart/form-data",
     },

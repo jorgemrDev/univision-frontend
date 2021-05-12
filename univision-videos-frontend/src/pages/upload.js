@@ -21,7 +21,11 @@ export default function Upload() {
       setProgress(Math.round((100 * event.loaded) / event.total));
     })
       .then((response) => {
-        setMessage(response.data.message);
+        console.log(response.data);
+        setMessage("File uploaded Succesfully!");
+        setProgress(0);
+        setCurrentFile(undefined);
+        setSelectedFiles(undefined);
       })
       .catch((error) => {
         setProgress(0);
@@ -33,7 +37,8 @@ export default function Upload() {
   };
 
   return (
-    <div>
+    <div class="container">
+      <h1 style={{ fontSize: 35, fontWeight: "bold" }}>Upload your Video</h1>
       {currentFile && (
         <div className="progress">
           <div

@@ -13,7 +13,7 @@ export default function Home() {
   useEffect(() => {
     (async () => {
       const response = await fetch(
-        `${API_URL}api/videos/?PageSize=1&PageNumber=${page}`
+        `${API_URL}api/videos/?PageSize=10&PageNumber=${page}`
       );
 
       const videos = await response.json();
