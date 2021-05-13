@@ -1,0 +1,139 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home Loading correctly 1`] = `
+<div
+  className="ant-row"
+  style={Object {}}
+>
+  <div
+    className="ant-col ant-col-24"
+    style={
+      Object {
+        "marginTop": 25,
+        "textAlign": "center",
+      }
+    }
+  >
+    <h1
+      style={
+        Object {
+          "fontSize": 35,
+          "fontWeight": "bold",
+        }
+      }
+    >
+      Uploaded Videos
+    </h1>
+  </div>
+  <div
+    className="ant-col ant-col-24"
+    style={Object {}}
+  >
+    <div
+      className="loading"
+    >
+      <div
+        className="ant-spin ant-spin-lg ant-spin-spinning"
+      >
+        <span
+          className="ant-spin-dot ant-spin-dot-spin"
+        >
+          <i
+            className="ant-spin-dot-item"
+          />
+          <i
+            className="ant-spin-dot-item"
+          />
+          <i
+            className="ant-spin-dot-item"
+          />
+          <i
+            className="ant-spin-dot-item"
+          />
+        </span>
+      </div>
+    </div>
+  </div>
+  <div
+    className="ant-col ant-col-24"
+    style={Object {}}
+  >
+    <footer
+      className="ant-layout-footer footer"
+    >
+      <p>
+        Jorge Moreno R
+      </p>
+    </footer>
+  </div>
+</div>
+`;
+
+exports[`Render Loading correctly 1`] = `
+<div
+  className="ant-row"
+  style={Object {}}
+>
+  <div
+    className="ant-col ant-col-24"
+    style={
+      Object {
+        "marginTop": 25,
+        "textAlign": "center",
+      }
+    }
+  >
+    <h1
+      style={
+        Object {
+          "fontSize": 35,
+          "fontWeight": "bold",
+        }
+      }
+    >
+      Uploaded Videos
+    </h1>
+  </div>
+  <div
+    className="ant-col ant-col-24"
+    style={Object {}}
+  >
+    <div
+      className="loading"
+    >
+      <div
+        className="ant-spin ant-spin-lg ant-spin-spinning"
+      >
+        <span
+          className="ant-spin-dot ant-spin-dot-spin"
+        >
+          <i
+            className="ant-spin-dot-item"
+          />
+          <i
+            className="ant-spin-dot-item"
+          />
+          <i
+            className="ant-spin-dot-item"
+          />
+          <i
+            className="ant-spin-dot-item"
+          />
+        </span>
+      </div>
+    </div>
+  </div>
+  <div
+    className="ant-col ant-col-24"
+    style={Object {}}
+  >
+    <footer
+      className="ant-layout-footer footer"
+    >
+      <p>
+        Jorge Moreno R
+      </p>
+    </footer>
+  </div>
+</div>
+`;
