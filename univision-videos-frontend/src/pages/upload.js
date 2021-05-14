@@ -28,8 +28,12 @@ export default function Upload() {
         setSelectedFiles(undefined);
       })
       .catch((error) => {
+        if (error.includes("403")) {
+          setMessage("Too Large file!");
+        } else {
+          setMessage("Could not upload the file!");
+        }
         setProgress(0);
-        setMessage("Could not upload the file!");
         setCurrentFile(undefined);
       });
 
